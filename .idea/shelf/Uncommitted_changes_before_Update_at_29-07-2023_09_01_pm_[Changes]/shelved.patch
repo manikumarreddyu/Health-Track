@@ -1,0 +1,146 @@
+Index: Shapash/Shapash_Heart.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from shapash.explainer.smart_explainer import SmartExplainer\r\nfrom sklearn.ensemble import RandomForestRegressor\r\nimport pandas as pd\r\nfrom sklearn.model_selection import train_test_split\r\n\r\nurl = \"C:\\\\Users\\\\deep\\\\PycharmProjects\\\\DiseasePrediction\\\\res\\\\heart.csv\"\r\nheart = pd.read_csv(url)\r\n\r\n# Ordinal feature encoding\r\ndf = heart.copy()\r\nencode = ['Sex', 'ChestPainType', 'RestingECG', 'ExerciseAngina', 'ST_Slope']\r\n\r\nfor col in encode:\r\n    dummy = pd.get_dummies(df[col], prefix=col)\r\n    df = pd.concat([df, dummy], axis=1)\r\n    del df[col]\r\n    del dummy\r\n\r\n# Separating X and y\r\nX = df.drop('HeartDisease', axis=1)\r\nY = df['HeartDisease']\r\n\r\n# Split the dataset into training and testing sets\r\nX_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)\r\nregressor = RandomForestRegressor(n_estimators=200).fit(X_train, y_train)\r\n\r\nxpl = SmartExplainer(model=regressor)\r\nxpl.compile(\r\n    x=X_test,\r\n\r\n)\r\napp = xpl.run_app(title_story='Tips Dataset')\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Shapash/Shapash_Heart.py b/Shapash/Shapash_Heart.py
+--- a/Shapash/Shapash_Heart.py	(revision 3d1ea180772ac237f19d3c368edb071d132c62b5)
++++ b/Shapash/Shapash_Heart.py	(date 1690644427002)
+@@ -1,32 +1,8 @@
+-from shapash.explainer.smart_explainer import SmartExplainer
+-from sklearn.ensemble import RandomForestRegressor
+-import pandas as pd
+-from sklearn.model_selection import train_test_split
+-
+-url = "C:\\Users\\deep\\PycharmProjects\\DiseasePrediction\\res\\heart.csv"
+-heart = pd.read_csv(url)
+-
+-# Ordinal feature encoding
+-df = heart.copy()
+-encode = ['Sex', 'ChestPainType', 'RestingECG', 'ExerciseAngina', 'ST_Slope']
+-
+-for col in encode:
+-    dummy = pd.get_dummies(df[col], prefix=col)
+-    df = pd.concat([df, dummy], axis=1)
+-    del df[col]
+-    del dummy
+-
+-# Separating X and y
+-X = df.drop('HeartDisease', axis=1)
+-Y = df['HeartDisease']
+-
+-# Split the dataset into training and testing sets
+-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+-regressor = RandomForestRegressor(n_estimators=200).fit(X_train, y_train)
+-
+-xpl = SmartExplainer(model=regressor)
+-xpl.compile(
+-    x=X_test,
+-
+-)
+-app = xpl.run_app(title_story='Tips Dataset')
++def f(m, n):
++    ans = 1
++    count = 0
++    while ans <= m:
++        count = count + 1
++        ans = ans * n
++    return count
++print(f(2000, 3))
+Index: requirements.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>streamlit==1.22.0\r\npandas==1.5.2\r\nnumpy==1.23.5\r\nscikit-learn==1.2.0\r\nmatplotlib==3.6.2\r\nshapash==2.3.5\r\nstreamlit-extras==0.2.7\r\nstreamlit-lottie==0.0.5
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/requirements.txt b/requirements.txt
+--- a/requirements.txt	(revision 3d1ea180772ac237f19d3c368edb071d132c62b5)
++++ b/requirements.txt	(date 1690644427016)
+@@ -5,4 +5,7 @@
+ matplotlib==3.6.2
+ shapash==2.3.5
+ streamlit-extras==0.2.7
+-streamlit-lottie==0.0.5
+\ No newline at end of file
++streamlit-lottie==0.0.5
++Pillow~=9.3.0
++sklearn~=0.0.post7
++autoviz~=0.1.730
+\ No newline at end of file
+Index: Classifier_Models/Classifier_model_builder_breast_cancer.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import numpy as np\r\nimport streamlit as st\r\nfrom sklearn.model_selection import train_test_split\r\nfrom sklearn.neighbors import KNeighborsClassifier\r\nfrom sklearn.naive_bayes import GaussianNB\r\nimport pandas as pd\r\nfrom sklearn.tree import DecisionTreeClassifier\r\nimport pickle\r\nfrom sklearn.metrics import confusion_matrix, accuracy_score\r\nimport matplotlib.pyplot as plt\r\nfrom sklearn.linear_model import LogisticRegression\r\nfrom sklearn.ensemble import RandomForestClassifier\r\nfrom sklearn.metrics import classification_report\r\n\r\nurl = \"res/dataset/breast-cancer.csv\"\r\nbc = pd.read_csv(url)\r\n\r\n# Ordinal feature encoding\r\ndf = bc.copy()\r\n\r\n# Separating X and y\r\nX = df.drop('diagnosis', axis=1)\r\nY = df['diagnosis']\r\n\r\n# Split the dataset into training and testing sets\r\nX_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)\r\n\r\n\r\n\"\"\"________Naive Bayes Algorithm________\"\"\"\r\n# Train the Naive Bayes classifier\r\nnb_classifier = GaussianNB(var_smoothing=1e-9)\r\nnb_classifier.fit(X_train, y_train)\r\n# Predict using the Naive Bayes classifier\r\nnb_predictions = nb_classifier.predict(X_test)\r\n# Calculate confusion matrix and accuracy for Naive Bayes classifier\r\nnb_cm = confusion_matrix(y_test, nb_predictions)\r\nnb_accuracy = accuracy_score(y_test, nb_predictions)\r\nnb_classifier_report = classification_report(y_test, nb_predictions)\r\nnb_classifier_report_dict = classification_report(y_test, nb_predictions, output_dict=True)\r\n\r\n\r\n\r\ndef plt_NB():\r\n\r\n    def classifier_report():\r\n        report_df = pd.DataFrame(nb_classifier_report_dict).transpose()\r\n        # Display the classification report as a table using st.write()\r\n        st.write(\"Naive Bayes Classifier Report\")\r\n        st.write(report_df)\r\n        st.write()\r\n\r\n    # Plot confusion matrix for Naive Bayes classifier\r\n    plt.figure()\r\n    plt.imshow(nb_cm, interpolation='nearest', cmap=plt.cm.Reds)\r\n    plt.title('Confusion Matrix - Naive Bayes')\r\n    plt.colorbar()\r\n    plt.xticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.yticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.xlabel('Predicted Label')\r\n    plt.ylabel('True Label')\r\n\r\n    thresh = nb_cm.max() / 2\r\n    for i, j in np.ndindex(nb_cm.shape):\r\n        plt.text(j, i, format(nb_cm[i, j], 'd'), ha='center', va='center',\r\n                 color='white' if nb_cm[i, j] > thresh else 'black')\r\n\r\n    # Display the confusion matrix on Streamlit\r\n    st.set_option('deprecation.showPyplotGlobalUse', False)\r\n    col1, col2 = st.columns(2)\r\n    with col1:\r\n        classifier_report()\r\n    with col2:\r\n        st.pyplot()\r\n\r\n\r\n\r\n\"\"\"________KNN Algorithm________\"\"\"\r\n# Train the K-Nearest Neighbors classifier\r\nknn_classifier = KNeighborsClassifier()\r\nknn_classifier.fit(X_train, y_train)\r\n# Predict using the K-Nearest Neighbors classifier\r\nknn_predictions = knn_classifier.predict(X_test)\r\nknn_cm = confusion_matrix(y_test, knn_predictions)\r\nknn_accuracy = accuracy_score(y_test, knn_predictions)\r\nknn_classifier_report = classification_report(y_test, knn_predictions)\r\nknn_classifier_report_dict = classification_report(y_test, knn_predictions, output_dict=True)\r\n\r\n\r\ndef plt_KNN():\r\n    def classifier_report():\r\n        report_df = pd.DataFrame(knn_classifier_report_dict).transpose()\r\n        # Display the classification report as a table using st.write()\r\n        st.write(\"K-Nearest Neighbors Report\")\r\n        st.write(report_df)\r\n        st.write()\r\n\r\n    # Plot confusion matrix for Naive Bayes classifier\r\n    plt.figure()\r\n    plt.imshow(knn_cm, interpolation='nearest', cmap=plt.cm.Reds)\r\n    plt.title('Confusion Matrix - KNN')\r\n    plt.colorbar()\r\n    plt.xticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.yticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.xlabel('Predicted Label')\r\n    plt.ylabel('True Label')\r\n\r\n    thresh = knn_cm.max() / 2\r\n    for i, j in np.ndindex(knn_cm.shape):\r\n        plt.text(j, i, format(knn_cm[i, j], 'd'), ha='center', va='center',\r\n                 color='white' if knn_cm[i, j] > thresh else 'black')\r\n\r\n    # Display the confusion matrix on Streamlit\r\n    st.set_option('deprecation.showPyplotGlobalUse', False)\r\n    col1, col2 = st.columns(2)\r\n    with col1:\r\n        classifier_report()\r\n    with col2:\r\n        st.pyplot()\r\n\r\n\r\n\r\n\"\"\"________Decision Tree________\"\"\"\r\n# Train the Decision Tree classifier\r\ndt_classifier = DecisionTreeClassifier(max_depth=None)\r\ndt_classifier.fit(X_train, y_train)\r\n# Predict using the Decision Tree classifier\r\ndt_predictions = dt_classifier.predict(X_test)\r\n# Calculate confusion matrix and accuracy for Decision Tree classifier\r\ndt_cm = confusion_matrix(y_test, dt_predictions)\r\ndt_accuracy = accuracy_score(y_test, dt_predictions)\r\ndt_classifier_report = classification_report(y_test, dt_predictions)\r\ndt_classifier_report_dict = classification_report(y_test, dt_predictions, output_dict=True)\r\n\r\n\r\ndef plt_DT():\r\n    def classifier_report():\r\n        report_df = pd.DataFrame(dt_classifier_report_dict).transpose()\r\n        # Display the classification report as a table using st.write()\r\n        st.write(\"Decision Tree Classifier Report\")\r\n        st.write(report_df)\r\n        st.write()\r\n\r\n    # Plot confusion matrix for Naive Bayes classifier\r\n    plt.figure()\r\n    plt.imshow(dt_cm, interpolation='nearest', cmap=plt.cm.Reds)\r\n    plt.title('Confusion Matrix - Decision Tree')\r\n    plt.colorbar()\r\n    plt.xticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.yticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.xlabel('Predicted Label')\r\n    plt.ylabel('True Label')\r\n\r\n    thresh = dt_cm.max() / 2\r\n    for i, j in np.ndindex(dt_cm.shape):\r\n        plt.text(j, i, format(dt_cm[i, j], 'd'), ha='center', va='center',\r\n                 color='white' if dt_cm[i, j] > thresh else 'black')\r\n\r\n    # Display the confusion matrix on Streamlit\r\n    st.set_option('deprecation.showPyplotGlobalUse', False)\r\n    col1, col2 = st.columns(2)\r\n    with col1:\r\n        classifier_report()\r\n    with col2:\r\n        st.pyplot()\r\n\r\n\r\n\r\n\"\"\"________Logistic Regression Algorithm________\"\"\"\r\n# Train the Logistic Regression classifier\r\nlr_classifier = LogisticRegression(max_iter=1000)\r\nlr_classifier.fit(X_train, y_train)\r\n# Predict using the Logistic Regression classifier\r\nlr_predictions = lr_classifier.predict(X_test)\r\n# Calculate confusion matrix and accuracy for Logistic Regression classifier\r\nlr_cm = confusion_matrix(y_test, lr_predictions)\r\nlr_accuracy = accuracy_score(y_test, lr_predictions)\r\nlr_classifier_report = classification_report(y_test, lr_predictions)\r\nlr_classifier_report_dict = classification_report(y_test, lr_predictions, output_dict=True)\r\n\r\n\r\ndef plt_LR():\r\n    def classifier_report():\r\n        report_df = pd.DataFrame(lr_classifier_report_dict).transpose()\r\n        # Display the classification report as a table using st.write()\r\n        st.write(\"Logistic Regression Classifier Report\")\r\n        st.write(report_df)\r\n        st.write()\r\n\r\n    # Plot confusion matrix for classifier\r\n    plt.figure()\r\n    plt.imshow(lr_cm, interpolation='nearest', cmap=plt.cm.Reds)\r\n    plt.title('Confusion Matrix - Logistic Regression')\r\n    plt.colorbar()\r\n    plt.xticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.yticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.xlabel('Predicted Label')\r\n    plt.ylabel('True Label')\r\n\r\n    thresh = lr_cm.max() / 2\r\n    for i, j in np.ndindex(lr_cm.shape):\r\n        plt.text(j, i, format(lr_cm[i, j], 'd'), ha='center', va='center',\r\n                 color='white' if lr_cm[i, j] > thresh else 'black')\r\n\r\n    # Display the confusion matrix on Streamlit\r\n    st.set_option('deprecation.showPyplotGlobalUse', False)\r\n    col1, col2 = st.columns(2)\r\n    with col1:\r\n        classifier_report()\r\n    with col2:\r\n        st.pyplot()\r\n\r\n\r\n\r\n\"\"\"________Random Forest Algorithm________\"\"\"\r\n# Train the Random Forest classifier\r\nrf_classifier = RandomForestClassifier(n_estimators=100)\r\nrf_classifier.fit(X_train, y_train)\r\n# Predict using the Random Forest classifier\r\nrf_predictions = rf_classifier.predict(X_test)\r\n# Calculate confusion matrix and accuracy for Random Forest classifier\r\nrf_cm = confusion_matrix(y_test, rf_predictions)\r\nrf_accuracy = accuracy_score(y_test, rf_predictions)\r\nrf_classifier_report = classification_report(y_test, rf_predictions)\r\nrf_classifier_report_dict = classification_report(y_test, rf_predictions, output_dict=True)\r\n\r\n\r\ndef plt_RF():\r\n    def classifier_report():\r\n        report_df = pd.DataFrame(rf_classifier_report_dict).transpose()\r\n        # Display the classification report as a table using st.write()\r\n        st.write(\"Random Forest Classifier Report\")\r\n        st.write(report_df)\r\n        st.write()\r\n\r\n    # Plot confusion matrix for  classifier\r\n    plt.figure()\r\n    plt.imshow(rf_cm, interpolation='nearest', cmap=plt.cm.Reds)\r\n    plt.title('Confusion Matrix - Random Forest')\r\n    plt.colorbar()\r\n    plt.xticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.yticks([0, 1], ['No Disease', 'Disease'])\r\n    plt.xlabel('Predicted Label')\r\n    plt.ylabel('True Label')\r\n\r\n    thresh = rf_cm.max() / 2\r\n    for i, j in np.ndindex(rf_cm.shape):\r\n        plt.text(j, i, format(rf_cm[i, j], 'd'), ha='center', va='center',\r\n                 color='white' if rf_cm[i, j] > thresh else 'black')\r\n\r\n    # Display the confusion matrix on Streamlit\r\n    st.set_option('deprecation.showPyplotGlobalUse', False)\r\n    col1, col2 = st.columns(2)\r\n    with col1:\r\n        classifier_report()\r\n    with col2:\r\n        st.pyplot()\r\n\r\n\r\n\r\n# Compare the 5 models and select the best algorithm\r\nmodels = {\r\n    'Naive Bayes': nb_classifier_report,\r\n    'K-Nearest Neighbors (KNN)': knn_classifier_report,\r\n    'Decision Tree': dt_classifier_report,\r\n    'Logistic Regression': lr_classifier_report,\r\n    'Random Forest': rf_classifier_report\r\n}\r\nbest_model = max(models, key=models.get)\r\n\r\n# Saving the model\r\npickle.dump(nb_classifier, open('res/pickle/breast-cancer_disease_classifier_NB.pkl', 'wb'))\r\npickle.dump(knn_classifier, open('res/pickle/breast-cancer_disease_classifier_KNN.pkl', 'wb'))\r\npickle.dump(dt_classifier, open('res/pickle/breast-cancer_disease_classifier_DT.pkl', 'wb'))\r\npickle.dump(lr_classifier, open('res/pickle/breast-cancer_disease_classifier_LR.pkl', 'wb'))\r\npickle.dump(rf_classifier, open('res/pickle/breast-cancer_disease_classifier_RF.pkl', 'wb'))\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Classifier_Models/Classifier_model_builder_breast_cancer.py b/Classifier_Models/Classifier_model_builder_breast_cancer.py
+--- a/Classifier_Models/Classifier_model_builder_breast_cancer.py	(revision 3d1ea180772ac237f19d3c368edb071d132c62b5)
++++ b/Classifier_Models/Classifier_model_builder_breast_cancer.py	(date 1690644427036)
+@@ -59,10 +59,10 @@
+     plt.xlabel('Predicted Label')
+     plt.ylabel('True Label')
+ 
+-    thresh = nb_cm.max() / 2
+-    for i, j in np.ndindex(nb_cm.shape):
+-        plt.text(j, i, format(nb_cm[i, j], 'd'), ha='center', va='center',
+-                 color='white' if nb_cm[i, j] > thresh else 'black')
++    thresh = dt_cm.max() / 2
++    for i, j in np.ndindex(dt_cm.shape):
++        plt.text(j, i, format(dt_cm[i, j], 'd'), ha='center', va='center',
++                 color='white' if dt_cm[i, j] > thresh else 'black')
+ 
+     # Display the confusion matrix on Streamlit
+     st.set_option('deprecation.showPyplotGlobalUse', False)
+Index: Shapash/Shapash_Hypertension.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Shapash/Shapash_Hypertension.py b/Shapash/Shapash_Hypertension.py
+new file mode 100644
+--- /dev/null	(date 1690644442164)
++++ b/Shapash/Shapash_Hypertension.py	(date 1690644442164)
+@@ -0,0 +1,11 @@
++import matplotlib
++import streamlit as st
++import pandas as pd
++from autoviz.AutoViz_Class import AutoViz_Class
++
++url = "../res/hypertension_data.csv"
++df = pd.read_csv(url)
++AV = AutoViz_Class()
++filename = url
++
++dft = AV.bar_plot(filename)
+Index: res/main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\n\r\ndf = pd.read_csv(\"res/stroke_data.csv\")\r\n\r\ndf['sex'].replace({1: \"Male\",0: \"Female\"}, inplace=True)\r\ndf['hypertension'].replace({0: \"No\",1: \"Yes\"}, inplace=True)\r\ndf['heart_disease'].replace({0: \"No\",1: \"Yes\"}, inplace=True)\r\ndf['ever_married'].replace({0: \"No\",1: \"Yes\"}, inplace=True)\r\ndf['work_type'].replace({0: \"Never Worked\",1: \"Children\",2:\"Goverment Job\",3:\"Self-Employed\",4:\"Private\"}, inplace=True)\r\ndf['Residence_type'].replace({0: \"Rural\",1: \"Urban\"}, inplace=True)\r\ndf['smoking_status'].replace({0: \"No\",1: \"Yes\"}, inplace=True)\r\n\r\ndf.to_csv(\"C:\\Projects\\GUI\\stroke_data.csv\")
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/res/main.py b/res/main.py
+--- a/res/main.py	(revision 3d1ea180772ac237f19d3c368edb071d132c62b5)
++++ b/res/main.py	(date 1690644427049)
+@@ -1,13 +1,5 @@
+ import pandas as pd
+ 
+-df = pd.read_csv("res/stroke_data.csv")
+-
+-df['sex'].replace({1: "Male",0: "Female"}, inplace=True)
+-df['hypertension'].replace({0: "No",1: "Yes"}, inplace=True)
+-df['heart_disease'].replace({0: "No",1: "Yes"}, inplace=True)
+-df['ever_married'].replace({0: "No",1: "Yes"}, inplace=True)
+-df['work_type'].replace({0: "Never Worked",1: "Children",2:"Goverment Job",3:"Self-Employed",4:"Private"}, inplace=True)
+-df['Residence_type'].replace({0: "Rural",1: "Urban"}, inplace=True)
+-df['smoking_status'].replace({0: "No",1: "Yes"}, inplace=True)
+-
+-df.to_csv("C:\Projects\GUI\stroke_data.csv")
+\ No newline at end of file
++df = pd.read_csv("../res/Datasets/CKD_Preprocessed.csv")
++print(df['age'].max())
++print(df['age'].min())

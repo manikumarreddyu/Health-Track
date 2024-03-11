@@ -1,0 +1,64 @@
+<changelist name="Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]" date="1690545993765" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 28-07-2023 05:36 pm [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="res/type_2_diabetes_classifier_RF.pkl" />
+    <option name="AFTER_PATH" value="res/type_2_diabetes_classifier_RF.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/type_2_diabetes_classifier_RF.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/stroke_disease_classifier_DT.pkl" />
+    <option name="AFTER_PATH" value="res/stroke_disease_classifier_DT.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/stroke_disease_classifier_DT.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/heart_disease_classifier_LR.pkl" />
+    <option name="AFTER_PATH" value="res/heart_disease_classifier_LR.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/heart_disease_classifier_LR.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/CKD_Preprocessed.csv" />
+    <option name="AFTER_PATH" value="res/Datasets/CKD_Preprocessed.csv" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/CKD_Preprocessed.csv" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/hypertension_disease_classifier_RF.pkl" />
+    <option name="AFTER_PATH" value="res/hypertension_disease_classifier_RF.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/hypertension_disease_classifier_RF.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/heart_disease_classifier_DT.pkl" />
+    <option name="AFTER_PATH" value="res/heart_disease_classifier_DT.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/heart_disease_classifier_DT.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/type_2_diabetes_classifier_DT.pkl" />
+    <option name="AFTER_PATH" value="res/type_2_diabetes_classifier_DT.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/type_2_diabetes_classifier_DT.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/stroke_disease_classifier_LR.pkl" />
+    <option name="AFTER_PATH" value="res/stroke_disease_classifier_LR.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/stroke_disease_classifier_LR.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/hypertension_disease_classifier_DT.pkl" />
+    <option name="AFTER_PATH" value="res/hypertension_disease_classifier_DT.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/hypertension_disease_classifier_DT.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/stroke_disease_classifier_RF.pkl" />
+    <option name="AFTER_PATH" value="res/stroke_disease_classifier_RF.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/stroke_disease_classifier_RF.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/hypertension_disease_classifier_LR.pkl" />
+    <option name="AFTER_PATH" value="res/hypertension_disease_classifier_LR.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/hypertension_disease_classifier_LR.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/heart_disease_classifier_RF.pkl" />
+    <option name="AFTER_PATH" value="res/heart_disease_classifier_RF.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-07-2023_05_36_pm_[Changes]/heart_disease_classifier_RF.pkl" />
+  </binary>
+</changelist>

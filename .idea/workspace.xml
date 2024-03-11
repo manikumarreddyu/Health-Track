@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3bceba5c-1534-412c-a912-a524c5b07970" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/DiseasePrediction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiseasePrediction.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Run_comman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Run_command.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2SvsXvopiBfvBLkDHiYmxZWjp9S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/deep/PycharmProjects/DiseasePrediction&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shubham\PycharmProjects\Hypertension_Stroke_DiseasePrediction\res" />
+      <recent name="C:\Users\Shubham\PycharmProjects\Hypertension_Stroke_DiseasePrediction\res\dataset" />
+      <recent name="C:\Users\Shubham\PycharmProjects\Hypertension_Stroke_DiseasePrediction\Apps" />
+      <recent name="C:\Users\Shubham\PycharmProjects\Hypertension_Stroke_DiseasePrediction\Classifier_Models" />
+      <recent name="C:\Users\deep\PycharmProjects\DiseasePrediction\res" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="DiseasePrediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bceba5c-1534-412c-a912-a524c5b07970" name="Changes" comment="" />
+      <created>1690038431660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690038431660</updated>
+      <workItem from="1690091793345" duration="1402000" />
+      <workItem from="1690097267704" duration="3588000" />
+      <workItem from="1690110315042" duration="1241000" />
+    </task>
+    <task id="LOCAL-00001" summary="First">
+      <created>1690038606065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690038606065</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Pikcle">
+      <created>1690041485079</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690041485079</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Pikcle">
+      <created>1690041525525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690041525525</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Pikcle_stroke">
+      <created>1690042216929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690042216929</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Pikcle_stroke">
+      <created>1690043927950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690043927950</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Pikcle_stroke">
+      <created>1690044218297</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690044218297</updated>
+    </task>
+    <task id="LOCAL-00008" summary="First">
+      <created>1690109213469</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690109213469</updated>
+    </task>
+    <task id="LOCAL-00011" summary="First">
+      <created>1690112644765</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690112644765</updated>
+    </task>
+    <task id="LOCAL-00012" summary="KNN_pickle">
+      <created>1690112868079</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690112868079</updated>
+    </task>
+    <task id="LOCAL-00013" summary="stroke_knn_pickle">
+      <created>1690112928425</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690112928425</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Second update">
+      <created>1690112968877</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690112968877</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Third update">
+      <created>1690128242073</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690128242073</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Some Changes">
+      <created>1690129410403</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690129410403</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Kidney module added">
+      <option name="closed" value="true" />
+      <created>1690289818269</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690289818269</updated>
+    </task>
+    <task id="LOCAL-00024" summary="med update">
+      <option name="closed" value="true" />
+      <created>1690291484074</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690291484074</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update 3.0">
+      <option name="closed" value="true" />
+      <created>1690294229361</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690294229361</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added Kidney.py">
+      <option name="closed" value="true" />
+      <created>1690298893277</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1690298893277</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Kidney_app&#10;np.array({0,1})">
+      <option name="closed" value="true" />
+      <created>1690299615879</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1690299615879</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add logo in sidebar">
+      <option name="closed" value="true" />
+      <created>1690303065920</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1690303065920</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add Diabetes Model">
+      <option name="closed" value="true" />
+      <created>1690309875149</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1690309875149</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Change in multiapp.py&#10;Changes in README.md">
+      <option name="closed" value="true" />
+      <created>1690310227627</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1690310227627</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add terminal runner file">
+      <option name="closed" value="true" />
+      <created>1690314340170</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1690314340170</updated>
+    </task>
+    <task id="LOCAL-00032" summary="requirements.txt">
+      <option name="closed" value="true" />
+      <created>1690316691030</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1690316691030</updated>
+    </task>
+    <task id="LOCAL-00033" summary="matplot update">
+      <option name="closed" value="true" />
+      <created>1690317012596</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1690317012596</updated>
+    </task>
+    <task id="LOCAL-00034" summary="panda">
+      <option name="closed" value="true" />
+      <created>1690317265475</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1690317265475</updated>
+    </task>
+    <task id="LOCAL-00035" summary="med image">
+      <option name="closed" value="true" />
+      <created>1690317613436</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1690317613436</updated>
+    </task>
+    <task id="LOCAL-00036" summary="med imd">
+      <option name="closed" value="true" />
+      <created>1690317701347</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1690317701347</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Resolve Heart Disease Issue">
+      <option name="closed" value="true" />
+      <created>1690386873571</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1690386873571</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Lol">
+      <option name="closed" value="true" />
+      <created>1690467809733</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1690467809733</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fix heart file error">
+      <option name="closed" value="true" />
+      <created>1690477364100</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1690477364100</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Update res directory">
+      <option name="closed" value="true" />
+      <created>1690644276680</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1690644276681</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Update Apps and Classifier directories&#10;Add Kidney_App.py module">
+      <option name="closed" value="true" />
+      <created>1690644398218</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1690644398218</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update pickles">
+      <option name="closed" value="true" />
+      <created>1690644701602</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1690644701602</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1690644884331</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1690644884331</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Caption added Kidney_App.py">
+      <option name="closed" value="true" />
+      <created>1690695293186</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1690695293186</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Tips of Apps Updated">
+      <option name="closed" value="true" />
+      <created>1690699297451</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1690699297451</updated>
+    </task>
+    <task id="LOCAL-00046" summary="update functions">
+      <option name="closed" value="true" />
+      <created>1690716377075</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1690716377075</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Example Dataset.py Updated">
+      <option name="closed" value="true" />
+      <created>1690716809369</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1690716809369</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Update Entire Apps">
+      <option name="closed" value="true" />
+      <created>1690718424437</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1690718424437</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Final final final update">
+      <option name="closed" value="true" />
+      <created>1690724465847</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1690724465847</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Email">
+      <option name="closed" value="true" />
+      <created>1690725164053</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1690725164054</updated>
+    </task>
+    <task id="LOCAL-00051" summary="l">
+      <option name="closed" value="true" />
+      <created>1690725245125</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1690725245125</updated>
+    </task>
+    <task id="LOCAL-00052" summary="secret">
+      <option name="closed" value="true" />
+      <created>1690725298302</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1690725298302</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Hopefully last update">
+      <option name="closed" value="true" />
+      <created>1690725873508</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1690725873509</updated>
+    </task>
+    <task id="LOCAL-00054" summary="email">
+      <option name="closed" value="true" />
+      <created>1690726766703</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1690726766703</updated>
+    </task>
+    <task id="LOCAL-00055" summary="email">
+      <option name="closed" value="true" />
+      <created>1690727359993</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1690727359993</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Final contact">
+      <option name="closed" value="true" />
+      <created>1690727922832</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1690727922832</updated>
+    </task>
+    <task id="LOCAL-00057" summary="A">
+      <option name="closed" value="true" />
+      <created>1690728004615</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1690728004615</updated>
+    </task>
+    <task id="LOCAL-00058" summary="logo change">
+      <option name="closed" value="true" />
+      <created>1690728550659</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1690728550659</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="matplot update" />
+    <MESSAGE value="panda" />
+    <MESSAGE value="med image" />
+    <MESSAGE value="med imd" />
+    <MESSAGE value="Resolve Heart Disease Issue" />
+    <MESSAGE value="Lol" />
+    <MESSAGE value="Fix heart file error" />
+    <MESSAGE value="Update res directory" />
+    <MESSAGE value="Update Apps and Classifier directories&#10;Add Kidney_App.py module" />
+    <MESSAGE value="update pickles" />
+    <MESSAGE value="Updated" />
+    <MESSAGE value="Caption added Kidney_App.py" />
+    <MESSAGE value="Tips of Apps Updated" />
+    <MESSAGE value="update functions" />
+    <MESSAGE value="Example Dataset.py Updated" />
+    <MESSAGE value="Update Entire Apps" />
+    <MESSAGE value="Final final final update" />
+    <MESSAGE value="Email" />
+    <MESSAGE value="l" />
+    <MESSAGE value="secret" />
+    <MESSAGE value="Hopefully last update" />
+    <MESSAGE value="email" />
+    <MESSAGE value="Final contact" />
+    <MESSAGE value="A" />
+    <MESSAGE value="logo change" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo change" />
+  </component>
+</project>

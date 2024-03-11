@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_25-07-2023_08_25_pm_[Changes]" date="1690296925442" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-07-2023_08_25_pm_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 25-07-2023 08:25 pm [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="res/hypertension_disease_classifier_RF.pkl" />
+    <option name="AFTER_PATH" value="res/hypertension_disease_classifier_RF.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-07-2023_08_25_pm_[Changes]/hypertension_disease_classifier_RF.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="res/hypertension_disease_classifier_DT.pkl" />
+    <option name="AFTER_PATH" value="res/hypertension_disease_classifier_DT.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-07-2023_08_25_pm_[Changes]/hypertension_disease_classifier_DT.pkl" />
+  </binary>
+</changelist>

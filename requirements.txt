@@ -1,0 +1,13 @@
+streamlit==1.22.0
+pandas==1.5.2
+numpy==1.23.5
+scikit-learn==1.2.0
+matplotlib==3.6.2
+shapash==2.3.5
+streamlit-extras==0.2.7
+streamlit-lottie==0.0.5
+Pillow~=9.3.0
+autoviz~=0.1.730
+plotly~=5.14.1
+st-pages==0.4.3
+openai~=0.27.8
